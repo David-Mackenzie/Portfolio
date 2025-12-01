@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Mackenzie - Engineering Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text {
+            background: linear-gradient(to right, #2563eb, #9333ea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-blue-100 selection:text-blue-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-xl font-bold tracking-tight text-slate-900">David<span class="text-blue-600">.</span></span>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">About</a>
+                    <a href="#experience" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">Experience</a>
+                    <a href="#education" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">Education</a>
+                    <a href="#projects" class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors">Projects</a>
+                    <a href="#contact" class="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-full hover:bg-blue-700 transition-colors shadow-sm shadow-blue-200">Contact Me</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="p-2 rounded-md text-slate-600 hover:bg-slate-100">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100">
+            <div class="px-4 pt-2 pb-4 space-y-1">
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-blue-600">About</a>
+                <a href="#experience" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-blue-600">Experience</a>
+                <a href="#education" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-blue-600">Education</a>
+                <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-slate-600 hover:bg-slate-50 hover:text-blue-600">Projects</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-blue-600 font-semibold">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="pt-32 pb-20 lg:pt-48 lg:pb-32 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+            <div class="flex-1 text-center lg:text-left">
+                <div class="inline-flex items-center px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-sm font-medium mb-6 border border-blue-100">
+                    <span class="flex h-2 w-2 rounded-full bg-blue-600 mr-2 animate-pulse"></span>
+                    Available for new opportunities
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 mb-6 leading-tight">
+                    Engineering systems that span <span class="gradient-text">mechanical</span>, <span class="gradient-text">civil</span>, and <span class="gradient-text">computational</span> domains.
+                </h1>
+                <!-- UPDATED: Added Project Manager -->
+                <p class="text-lg text-slate-600 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                    I'm David Mackenzie, a Systems-oriented Engineer and Project Manager based in Brampton. I blend mechanical design with software development to drive efficiency in large-scale engineering projects.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <a href="#projects" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-slate-900 hover:bg-slate-800 transition-all shadow-lg shadow-slate-200">
+                        View Projects
+                        <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/david-mackenzie-66677b205/" target="_blank" class="inline-flex items-center justify-center px-6 py-3 border border-slate-200 text-base font-medium rounded-lg text-slate-700 bg-white hover:bg-slate-50 hover:border-slate-300 transition-all">
+                        <i data-lucide="linkedin" class="mr-2 w-4 h-4"></i>
+                        LinkedIn
+                    </a>
+                </div>
+                
+                <!-- Tech Stack Icons - UPDATED with MS Office, VBA, and RISA 3D -->
+                <div class="mt-12 pt-8 border-t border-slate-100">
+                    <p class="text-sm font-medium text-slate-400 mb-4">CORE COMPETENCIES</p>
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-6 text-slate-400">
+                        <span class="hover:text-blue-600 transition-colors font-semibold">SolidWorks</span>
+                        <span class="hover:text-blue-600 transition-colors font-semibold">Python</span>
+                        <span class="hover:text-blue-600 transition-colors font-semibold">AutoCAD</span>
+                        <span class="hover:text-blue-600 transition-colors font-semibold">Revit</span>
+                        <span class="hover:text-blue-600 transition-colors font-semibold">C++</span>
+                        <span class="hover:text-blue-600 transition-colors font-semibold">TensorFlow</span>
+                        <span class="hover:text-blue-600 transition-colors font-semibold">MS Office</span>
+                        <span class="hover:text-blue-600 transition-colors font-semibold">VBA</span>
+                        <span class="hover:text-blue-600 transition-colors font-semibold">RISA 3D</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hero Image / Avatar (Updated to be circular and include the photo) -->
+            <div class="flex-shrink-0 relative group">
+                <!-- Outer glow effect -->
+                <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                
+                <!-- Image Container (made fully rounded for the headshot) -->
+                <div class="relative w-72 h-72 sm:w-80 sm:h-80 bg-slate-100 rounded-full overflow-hidden shadow-2xl flex items-center justify-center border-4 border-white">
+                    <!-- The 'src' attribute now points to the actual uploaded image. -->
+                    <img 
+                        src="/image_fd0bdf.png" 
+                        alt="David Mackenzie Professional Headshot"
+                        class="object-cover w-full h-full"
+                        onerror="this.onerror=null; this.src='https://placehold.co/320x320/f1f5f9/94a3b8?text=DM';" 
+                    >
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
+                <div>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-4">Professional Experience</h2>
+                    <p class="text-slate-600 max-w-xl">Leading multidisciplinary engineering projects and building automation tools.</p>
+                </div>
+            </div>
+
+            <div class="relative border-l border-slate-200 ml-3 space-y-12">
+                <!-- Job 1 -->
+                <div class="relative pl-8 sm:pl-12 group">
+                    <div class="absolute -left-1.5 top-2 h-3 w-3 rounded-full border-2 border-white bg-blue-600 ring-4 ring-blue-50"></div>
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-2">
+                        <h3 class="text-xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">Mechanical Designer & Project Manager</h3>
+                        <span class="text-sm font-medium text-slate-500 bg-slate-50 px-3 py-1 rounded-full border border-slate-100 mt-1 sm:mt-0 w-fit">Fall 2022 — Present</span>
+                    </div>
+                    <div class="text-lg font-medium text-slate-700 mb-4">ISOTECH Industries</div>
+                    <p class="text-slate-600 mb-4 leading-relaxed">
+                        Led $7M+ multidisciplinary engineering projects delivering custom thermal, seismic, and vibration systems across high-rise, healthcare, and industrial sectors.
+                    </p>
+                    <ul class="list-disc list-inside text-slate-600 mb-6 space-y-2">
+                        <li>Designed and integrated a floating riser system into internal software (Python/VBA), resolving critical load issues and increasing efficiency by 200%.</li>
+                        <li>Developed custom mechanical assemblies in SolidWorks and AutoCAD, including pipe anchors and seismic restraints, accelerating project timelines and ensuring code compliance.</li>
+                        <li>Managed end-to-end UL Fire Certification for innovative construction systems, enabling product launch.</li>
+                        <li>Coordinated with vendors, consultants, and site teams on designs and inspections.</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-0.5 rounded-md text-xs font-medium bg-slate-100 text-slate-600">Project Management</span>
+                        <span class="px-2.5 py-0.5 rounded-md text-xs font-medium bg-slate-100 text-slate-600">Python Automation</span>
+                        <span class="px-2.5 py-0.5 rounded-md text-xs font-medium bg-slate-100 text-slate-600">SolidWorks</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-slate-50">
+         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Education & Certifications</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Degree -->
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-900">Ontario Tech University</h3>
+                            <p class="text-blue-600 font-medium text-sm mb-2">B.Eng - Mechanical Engineering (Hons)</p>
+                            <p class="text-slate-500 text-sm">Fall 2018 - Spring 2022</p>
+                        </div>
+                        <i data-lucide="graduation-cap" class="w-6 h-6 text-slate-300"></i>
+                    </div>
+                </div>
+
+                <!-- NEW Professional Development -->
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-900">Professional Development</h3>
+                            <ul class="text-slate-600 text-sm mt-2 space-y-1">
+                                <li>• PMP - est. completion Q1 2026</li>
+                                <li>• P.Eng - est. completion Q4 2026</li>
+                            </ul>
+                        </div>
+                        <i data-lucide="trending-up" class="w-6 h-6 text-slate-300"></i>
+                    </div>
+                </div>
+
+                <!-- Harvard -->
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-900">Harvard University (Online)</h3>
+                            <p class="text-blue-600 font-medium text-sm mb-2">Computer Science & AI</p>
+                            <p class="text-slate-500 text-sm">Intro to Computer Science, Intro to AI with Python</p>
+                        </div>
+                        <i data-lucide="code-2" class="w-6 h-6 text-slate-300"></i>
+                    </div>
+                </div>
+
+                <!-- Certs -->
+                <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <h3 class="text-lg font-bold text-slate-900">Current Certifications</h3>
+                            <ul class="text-slate-600 text-sm mt-2 space-y-1">
+                                <li>• CSWA - Certified SOLIDWORKS Associate</li>
+                                <li>• Working at Heights & 4-Step Safety</li>
+                                <li>• First Aid & WHMIS</li>
+                            </ul>
+                        </div>
+                        <i data-lucide="award" class="w-6 h-6 text-slate-300"></i>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">Technical Projects</h2>
+                <p class="text-slate-600">Specialized engineering systems and software development.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- ISOTECH Project Card 1: Thermal Expansion Systems -->
+                <article class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-lg hover:border-red-400 transition-all duration-300 flex flex-col h-full">
+                    <div class="h-48 bg-slate-100 relative overflow-hidden group border-b border-slate-100">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-red-600 to-orange-600 flex items-center justify-center text-white/90 text-4xl font-bold group-hover:scale-105 transition-transform duration-500">
+                            <i data-lucide="thermometer-sun" class="w-12 h-12"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-slate-900">Thermal Expansion Systems</h3>
+                        </div>
+                        <p class="text-slate-600 mb-6 text-sm leading-relaxed flex-1">
+                            Designed custom assemblies to mitigate thermal expansion and contraction stresses in large piping risers for high-rise buildings.
+                        </p>
+                        <ul class="list-disc list-inside text-sm text-slate-600 mb-4 pl-2 space-y-1">
+                            <li>**Projects:** Forma Condos, 180 Front St, Verge Condos.</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="text-xs font-medium px-2 py-1 bg-red-50 text-red-700 rounded-md">HVAC</span>
+                            <span class="text-xs font-medium px-2 py-1 bg-red-50 text-red-700 rounded-md">Pipe Stress</span>
+                            <span class="text-xs font-medium px-2 py-1 bg-red-50 text-red-700 rounded-md">Civil Code</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ISOTECH Project Card 2: Seismic/Wind Restraint Systems -->
+                <article class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-lg hover:border-amber-400 transition-all duration-300 flex flex-col h-full">
+                    <div class="h-48 bg-slate-100 relative overflow-hidden group border-b border-slate-100">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-amber-600 to-yellow-600 flex items-center justify-center text-white/90 text-4xl font-bold group-hover:scale-105 transition-transform duration-500">
+                            <i data-lucide="shield" class="w-12 h-12"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-slate-900">Seismic & Wind Restraints</h3>
+                        </div>
+                        <p class="text-slate-600 mb-6 text-sm leading-relaxed flex-1">
+                            Engineered structural restraints to ensure HVAC and plumbing systems remain secure and functional during seismic or high-wind events.
+                        </p>
+                        <ul class="list-disc list-inside text-sm text-slate-600 mb-4 pl-2 space-y-1">
+                            <li>**Projects:** South Niagara, Guelph General, Hamilton General Hospitals.</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="text-xs font-medium px-2 py-1 bg-amber-50 text-amber-700 rounded-md">Seismic Design</span>
+                            <span class="text-xs font-medium px-2 py-1 bg-amber-50 text-amber-700 rounded-md">Structural</span>
+                            <span class="text-xs font-medium px-2 py-1 bg-amber-50 text-amber-700 rounded-md">Health Care</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- ISOTECH Project Card 3: Vibration Isolation Systems -->
+                <article class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-lg hover:border-purple-400 transition-all duration-300 flex flex-col h-full">
+                    <div class="h-48 bg-slate-100 relative overflow-hidden group border-b border-slate-100">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-purple-600 to-indigo-600 flex items-center justify-center text-white/90 text-4xl font-bold group-hover:scale-105 transition-transform duration-500">
+                            <i data-lucide="maximize-2" class="w-12 h-12"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-slate-900">Specialized Vibration Isolation</h3>
+                        </div>
+                        <p class="text-slate-600 mb-6 text-sm leading-relaxed flex-1">
+                            Designed precise damping and isolation systems for sensitive equipment to eliminate noise transfer and micro-vibrations.
+                        </p>
+                        <ul class="list-disc list-inside text-sm text-slate-600 mb-4 pl-2 space-y-1">
+                            <li>**Projects:** YONDR Data Centre, 36 Olive, Brain Centre.</li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="text-xs font-medium px-2 py-1 bg-purple-50 text-purple-700 rounded-md">Acoustics</span>
+                            <span class="text-xs font-medium px-2 py-1 bg-purple-50 text-purple-700 rounded-md">Data Centers</span>
+                            <span class="text-xs font-medium px-2 py-1 bg-purple-50 text-purple-700 rounded-md">Damping</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Existing Project Card 4: Q-Learning Survival Bot (AI) -->
+                <article class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-lg hover:border-blue-200 transition-all duration-300 flex flex-col h-full">
+                    <div class="h-48 bg-slate-100 relative overflow-hidden group border-b border-slate-100">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-slate-700 to-slate-900 flex items-center justify-center text-white/90 text-4xl font-bold group-hover:scale-105 transition-transform duration-500">
+                            <i data-lucide="bot" class="w-12 h-12"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-slate-900">Q-Learning Survival Bot</h3>
+                        </div>
+                        <p class="text-slate-600 mb-6 text-sm leading-relaxed flex-1">
+                            Developed a Python Reinforcement Learning agent that navigates a 2D grid to find food while avoiding obstacles using Q-Learning algorithms.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="text-xs font-medium px-2 py-1 bg-blue-50 text-blue-700 rounded-md">Python</span>
+                            <span class="text-xs font-medium px-2 py-1 bg-blue-50 text-blue-700 rounded-md">AI/ML</span>
+                            <span class="text-xs font-medium px-2 py-1 bg-blue-50 text-blue-700 rounded-md">RL</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Existing Project Card 5: Injection Molding Machine (Capstone) -->
+                <article class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-lg hover:border-blue-200 transition-all duration-300 flex flex-col h-full">
+                    <div class="h-48 bg-slate-100 relative overflow-hidden group border-b border-slate-100">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-orange-500 to-red-500 flex items-center justify-center text-white/90 text-4xl font-bold group-hover:scale-105 transition-transform duration-500">
+                            <i data-lucide="settings" class="w-12 h-12"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-slate-900">Injection Molding Machine</h3>
+                        </div>
+                        <p class="text-slate-600 mb-6 text-sm leading-relaxed flex-1">
+                            Led a 5-person capstone team to design and build a working prototype of a desktop injection molding machine.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="text-xs font-medium px-2 py-1 bg-orange-50 text-orange-700 rounded-md">SolidWorks</span>
+                            <span class="text-xs font-medium px-2 py-1 bg-orange-50 text-orange-700 rounded-md">Prototyping</span>
+                            <span class="text-xs font-medium px-2 py-1 bg-orange-50 text-orange-700 rounded-md">Leadership</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Existing Project Card 6: Object Recognition Tool (AI) -->
+                <article class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-lg hover:border-pink-400 transition-all duration-300 flex flex-col h-full">
+                    <div class="h-48 bg-slate-100 relative overflow-hidden group border-b border-slate-100">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-fuchsia-600 to-pink-600 flex items-center justify-center text-white/90 text-4xl font-bold group-hover:scale-105 transition-transform duration-500">
+                            <i data-lucide="camera" class="w-12 h-12"></i>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-slate-900">Object Recognition Tool</h3>
+                        </div>
+                        <p class="text-slate-600 mb-6 text-sm leading-relaxed flex-1">
+                            Implemented real-time object detection using OpenCV and a webcam feed, demonstrating image processing and machine learning skills.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="text-xs font-medium px-2 py-1 bg-pink-50 text-pink-700 rounded-md">OpenCV</span>
+                            <span class="text-xs font-medium px-2 py-1 bg-pink-50 text-pink-700 rounded-md">Machine Learning</span>
+                            <span class="text-xs font-medium px-2 py-1 bg-pink-50 text-pink-700 rounded-md">Python</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-slate-900 rounded-2xl overflow-hidden shadow-2xl flex flex-col md:flex-row">
+                <!-- Contact Info -->
+                <div class="p-10 md:w-5/12 text-white flex flex-col justify-between bg-gradient-to-br from-slate-900 to-slate-800">
+                    <div>
+                        <h2 class="text-2xl font-bold mb-4">Let's connect</h2>
+                        <p class="text-slate-300 mb-8 text-sm leading-relaxed">I'm currently looking for new opportunities in mechanical design and systems engineering. Feel free to reach out!</p>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-3 text-sm text-slate-300">
+                                <i data-lucide="mail" class="w-5 h-5 text-blue-400"></i>
+                                <span>davidmackenzxiv@gmail.com</span>
+                            </div>
+                            <!-- Phone number removed as requested -->
+                            <div class="flex items-center gap-3 text-sm text-slate-300">
+                                <i data-lucide="map-pin" class="w-5 h-5 text-blue-400"></i>
+                                <span>Brampton, ON</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-12 flex gap-4">
+                        <a href="https://www.linkedin.com/in/david-mackenzie-66677b205/" target="_blank" class="p-2 bg-slate-800 rounded-full hover:bg-blue-600 transition-colors"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="p-10 md:w-7/12 bg-white">
+                    <form class="space-y-6" onsubmit="event.preventDefault(); alert('Thanks for your message! This is a demo form.');">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-slate-700 mb-1">Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-shadow" placeholder="Your name">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-slate-700 mb-1">Email</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-shadow" placeholder="your@email.com">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-slate-700 mb-1">Message</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-shadow" placeholder="Hi David..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white font-medium py-2.5 rounded-lg hover:bg-blue-700 transition-colors shadow-lg shadow-blue-200">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="text-slate-500 text-sm">
+                &copy; 2025 David Mackenzie. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        menu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+
+        // Reveal animations on scroll
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        // Add fade-in classes to sections
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
