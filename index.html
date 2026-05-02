@@ -372,10 +372,12 @@
 
                 <!-- Existing Project Card 6: Object Recognition Tool (AI) -->
                 <article onclick="openProjectModal('objectrec')" class="cursor-pointer bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden hover:shadow-xl hover:border-pink-400 hover:-translate-y-1 transition-all duration-300 flex flex-col h-full">
-                    <div class="h-48 bg-slate-100 relative overflow-hidden group border-b border-slate-100">
-                        <div class="absolute inset-0 bg-gradient-to-tr from-fuchsia-600 to-pink-600 flex items-center justify-center text-white/90 text-4xl font-bold group-hover:scale-105 transition-transform duration-500">
-                            <i data-lucide="camera" class="w-12 h-12"></i>
-                        </div>
+                    <div class="h-48 overflow-hidden border-b border-slate-100">
+                        <img 
+                            src="./assets/cv1.jpg" 
+                            alt="Object Recognition Tool"
+                            class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                        >
                     </div>
                     <div class="p-6 flex-1 flex flex-col">
                         <div class="flex justify-between items-start mb-4">
@@ -503,9 +505,6 @@
                 // visuals: '<img src="./assets/thermal-project.jpg" alt="Thermal Project" class="w-full h-full object-cover">',
                 visuals: `
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full h-full">
-                    <img src="./assets/thermal1.jpg" 
-                         class="w-full h-full object-cover rounded-lg" 
-                         alt="Thermal Expansion Assembly 1">
                 
                     <img src="./assets/thermal2.jpg" 
                          class="w-full h-full object-cover rounded-lg" 
@@ -527,7 +526,16 @@
             },
             'seismic': {
                 title: 'Seismic & Wind Restraint Systems',
-                visuals: '<div class="w-full h-full bg-gradient-to-tr from-amber-600 to-yellow-600 flex items-center justify-center text-white"><i data-lucide="shield" class="w-24 h-24 opacity-50"></i></div>',
+                visuals: `
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full h-full">                
+                    <img src="./assets/seismic2.jpg" 
+                         class="w-full h-full object-cover rounded-lg" 
+                         alt="Thermal Expansion Assembly 2">
+                
+                    <img src="./assets/seismic3.jpg" 
+                         class="w-full h-full object-cover rounded-lg md:col-span-2" 
+                         alt="Thermal Expansion Installation">
+                </div>
                 description: `
                     <p class="text-lg font-medium text-slate-800">Engineered structural restraints to ensure HVAC and plumbing systems remain secure and functional during seismic or high-wind events.</p>
                     <p class="mt-4">Using <strong>Revit</strong> and <strong>Bluebeam</strong>, I coordinated directly with structural engineers and site teams to integrate our custom bracing systems into existing building plans, ensuring a clash-free installation process.</p>
@@ -536,7 +544,17 @@
             },
             'vibration': {
                 title: 'Specialized Vibration Isolation',
-                visuals: '<div class="w-full h-full bg-gradient-to-tr from-purple-600 to-indigo-600 flex items-center justify-center text-white"><i data-lucide="maximize-2" class="w-24 h-24 opacity-50"></i></div>',
+                visuals: `
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full h-full">
+               
+                    <img src="./assets/vibration2.jpg" 
+                         class="w-full h-full object-cover rounded-lg" 
+                         alt="Thermal Expansion Assembly 2">
+                
+                    <img src="./assets/vibration3.jpg" 
+                         class="w-full h-full object-cover rounded-lg md:col-span-2" 
+                         alt="Thermal Expansion Installation">
+                </div>
                 description: `
                     <p class="text-lg font-medium text-slate-800">Designed precise damping and isolation systems for sensitive equipment.</p>
                     <p class="mt-4">This project focused on isolating massive backup generators and chillers in healthcare and data center environments. Utilizing <strong>MATLAB</strong> for complex harmonic modeling, I developed a custom spring-and-elastomer system that completely eliminated micro-vibrations from transferring into the building's concrete slab.</p>
